@@ -1,0 +1,48 @@
+/* A. Using combinator selectors */
+body > h2:first-of-type {
+    color: blue; /* Change color of the first <h2> tag */
+    background-color: lightyellow; /* Change background color of the first <h2> tag */
+}
+
+body a {
+    color: red; /* Change text color of all anchor tags */
+}
+
+body > p:first-of-type {
+    color: red; /* Change text color of the first <p> tag */
+}
+
+/* B. Using attribute selectors */
+a[href] {
+    color: red; /* Change color of anchor tags with href attribute */
+    text-decoration: none; /* Remove underline */
+}
+
+a.active {
+    color: green; /* Change color of anchor tags with class "active" */
+    text-decoration: underline; /* Underline text */
+}
+
+a[target="_self"] {
+    background-color: lightgray; /* Change background color of anchor tags with target="_self" */
+}
+
+/* C. Using pseudo selectors */
+p:last-of-type::after {
+    content: "..."; /* Add three dots after the last <p> tag */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "•"; /* Custom bullet point */
+    color: purple; /* Change color of the bullet points */
+    margin-right: 8px; /* Space between bullet and text */
+}
+
+p:nth-of-type(2)::first-letter {
+    color: red; /* Change color of the first letter of the second <p> tag */
+    font-size: 30px; /* Increase font size of the first letter */
+}

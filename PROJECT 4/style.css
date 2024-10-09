@@ -1,0 +1,21 @@
+/* Basic button styling */
+.styled-button {
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    background-color: #007BFF; /* Button background color */
+    border-radius: 10px;
+    margin-top: 350px;
+    margin-left: 700px;
+    color: white; /* Text color */
+    cursor: pointer; /* Cursor style */
+    position: relative; /* Position for pseudo-elements */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for smooth effect */
+}
+
+
+/* Hover effect */
+.styled-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+}

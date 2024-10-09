@@ -1,0 +1,20 @@
+/* Using pseudo-element selectors to add content */
+h1::before {
+    content: "Start: "; /* Text before the <h1> */
+    color: gray; /* Optional: change color */
+}
+
+h1::after {
+    content: " :End"; /* Text after the <h1> */
+    color: gray; /* Optional: change color */
+}
+
+h2::before {
+    content: "[Heading] "; /* Text before the <h2> */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+p::after {
+    content: " [Read more]"; /* Text after each <p> */
+    font-style: italic; /* Optional: italicize the text */
+}
